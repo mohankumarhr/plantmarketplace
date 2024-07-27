@@ -1,0 +1,39 @@
+.popular-product-container h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.popular-product-section{
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 420px;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    margin: 50px 20px;
+}
+
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.all-products a{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.all-products a:hover{
+    background-color: #6ea820;
+    color: white;
+}

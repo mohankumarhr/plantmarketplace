@@ -1,0 +1,15 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer label {
+    margin-bottom: 10px;
+  }
+  
+  .inputContainer input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    outline: none;
+  }

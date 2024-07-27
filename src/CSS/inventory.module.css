@@ -1,0 +1,111 @@
+.inventoryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.inventoryContainer h3 {
+    font-size: 30px;
+}
+
+.inventoryWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.inventoryItem {
+    width: 300px;
+}
+
+.inventoryImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 49px;
+    transition: all 1s ease;
+    position: relative;
+}
+
+.inventoryEdit {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    border-radius: 49px;
+    top: 0;
+    left: 0;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.2s ease;
+    display: none;
+    rotate: y -180deg;
+}
+.inventoryEdit button{
+    padding: 10px 20px;
+    background-color: #436850;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.inventoryImg img {
+    width: 300px;
+    border: 6px solid #3232324D;
+    border-radius: 49px;
+    height: 300px;
+}
+
+.inventoryItemDetails h3 {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.inventoryItemDetails p {
+    margin-left: 5px;
+    color: #323232A8;
+}
+
+.inventoryAddBtn {
+    width: 300px;
+    height: 347px;
+    display: flex;
+}
+
+.addCircleBtn {
+    width: 300px;
+    height: 267px;
+    border: 6px solid #3232324D;
+    border-radius: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addCircleBtn p {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.inventoryImg:hover {
+    rotate: y -180deg;
+}
+.inventoryImg:hover .inventoryEdit{
+    display: flex;
+}

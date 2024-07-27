@@ -1,0 +1,136 @@
+.slider-container{
+    width: 100%;
+    /* height: 85vh; */
+    display: flex;
+    background-color: #f4f4f2;
+}
+.arrow-left,.arrow-right{
+   height: 65px;
+   width: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   opacity: 0.5;
+}
+.arrow-left:hover,.arrow-right:hover{
+    background-color: rgb(250, 246, 246);
+}
+.arrow-left:hover .arrow{
+    color: black;
+}
+.arrow-right:hover .arrow{
+    color: black;
+}
+
+
+.arrow-left{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.arrow-right{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.arrow{
+margin: auto;
+ color: transparent;
+}
+.slide-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.slider{
+    width: 100vw;
+    /* height: 85vh; */
+    display: flex;
+    align-items: center;
+}
+.slider-imgcontainer{
+    height: 100%;
+    flex: 1;
+    display: flex;
+}
+.slider-infocontainer{
+    flex: 1;
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+}
+
+#root > div > div > div.slider-container > div > div > div.carousel.carousel-slider > button.control-arrow.control-prev{
+    margin: auto;
+    height: 70px;
+    width: 30px;
+}
+
+#root > div > div > div.slider-container > div > div > div.carousel.carousel-slider > button.control-arrow.control-next{
+    margin: auto;
+    height: 70px;
+    width: 30px;
+}
+
+.carousel-status{
+    display: none;
+}
+
+.slider-infocontainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.slider-infocontainer h1{
+    font-size: 60px;
+}
+.slider-infocontainer p{
+    margin: 40px 30px 40px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.slider-infocontainer button{
+    border: none;
+    width: 151px;
+    background:    #6ea820;
+    border-radius: 6px;
+    padding:       16px 17px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 21px/1 "Ubuntu", sans-serif;
+    text-align:    center;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+     .slider-container{
+        padding: 10px;
+    }
+    .slider-infocontainer h1{
+        font-size: 26px;
+    }
+    .slider-infocontainer p{
+        margin: 10px 8px 10px 0;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .slider-infocontainer button{
+        border: none;
+        width: 90px;
+        background:    #6ea820;
+        border-radius: 6px;
+        padding:       10px;
+        color:         #ffffff;
+        display:       inline-block;
+        font:          normal bold 12px/1 "Ubuntu", sans-serif;
+        text-align:    center;
+        cursor: pointer;
+    }
+}

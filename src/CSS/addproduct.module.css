@@ -1,0 +1,121 @@
+.addProductContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+}
+.addProductContainer h3{
+    font-size: 30px;
+    margin: auto;
+}
+.addProductFrom{
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.formBox1{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.formBox1 input{
+    border: 1px solid gray;
+}
+select{
+    width: 200px;
+    height: 39px;
+    margin-top: 34px;
+}
+.fetureslist{
+    padding: 10px 0;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.featureItem{
+    border: 1px solid #3232324D;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.featureItem.selectedFeature{
+    border: 1px solid #6ea820;
+    color: #6ea820;
+}
+.descriptionBox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.descriptionBox textarea{
+    outline: none;
+    padding: 10px;
+}
+.pricebox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pricebox input{
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid gray;
+}
+.addProductFrom button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #6ea820;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+
+    .addProductContainer{
+        padding: 50px 0;
+    }
+
+    .addProductFromContainer{
+        width: 100%;
+    }
+
+    .addProductFrom{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .formBox1{
+        gap: 0;
+    }
+
+    select{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .fetureslist{
+        width: 100%;
+    }
+    .addProductImgContainer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,406 @@
+
+.navbar-container {
+    width: 100%;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.nav-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ************************************************** */
+
+.toggle-seller-button {
+    cursor: pointer;
+    background-color: var(--col-green);
+    width: 80px;
+    height: 40px;
+    display: block;
+    border-radius: 200px;
+}
+
+.toggle-seller-button::before {
+    position: absolute;
+    content: 'Buy';
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6ea820;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.seller-btn input:checked+.toggle-seller-button {
+    background-color: #436850;
+}
+
+.seller-btn input:checked+.toggle-seller-button::before {
+    transform: translateX(40px);
+    content: 'Sell';
+}
+
+.seller-btn input {
+    display: none;
+}
+
+/* *************************************************************** */
+
+.phone-cart {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-list li {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li a:hover{
+    color: #6ea820;
+}
+
+.closs-icon {
+    display: none;
+}
+
+.nav-list .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-list .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.profile-logo-container:hover .dropdown-menu-profile{
+    display: block;
+}
+
+.dropdown-menu,.dropdown-menu-profile{
+    width: max-content;
+    height: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    padding: 10px 30px 10px 10px;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.dropdown-menu-profile{
+    top: 70px;
+}
+
+
+.dropdown-menu::before, .dropdown-menu-profile::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0.15em;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -8px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    border-bottom: none;
+    }
+
+.dropdown-menu::before:hover .dropdown-menu{
+display: block;
+}
+    
+
+
+.dropdown-menu ul,.dropdown-menu-profile ul{
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dropdown-menu ul li a:hover{
+    color: #6ea820;
+}
+
+.search-section {
+    flex-basis: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-right: 2px;
+    outline: none;
+}
+
+.search-section button {
+    padding: 7px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #6ea820;
+    color: white;
+    cursor: pointer;
+}
+
+.logo-container {
+    flex-basis: 25%;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 100px;
+}
+
+.menu-container {
+    flex-basis: 35%;
+}
+
+.seller-btn button {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    color: #6ea820;
+    border: 2.5px solid #6ea820;
+    cursor: pointer;
+}
+
+.seller-btn button:hover {
+    background-color: #6ea820;
+    color: white;
+}
+
+.p-v-seller-btn{
+    display: none;
+}
+
+.profile-logo-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a2a0a0;
+}
+
+.profile-logo-container-phone{
+    display: none;
+}
+
+.profile-logo-container ul li{
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .seller-btn button {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        width: fit-content;
+        background-color: #ccc;
+        position: absolute;
+        top: 0;
+        left: -230px;
+        height: 100vh;
+        padding: 30px 80px 0 20px;
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav-list li {
+        padding: 10px 3px;
+        font-size: 18px;
+        cursor: none;
+    }
+
+    .nav-list li:hover {
+        background-color: transparent;
+    }
+
+    .desktop-badge {
+        display: none;
+    }
+
+    .navbar-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .lang-section {
+        display: none;
+    }
+
+    .seller-btn {
+        display: none;
+    }
+
+    .search-conatiner {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .search {
+        font-size: 13px;
+        padding: 2px 5px;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 35px;
+    }
+
+    .menu-icon svg {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .closs-icon {
+        display: block;
+        color: black;
+    }
+
+    .closs-icon:hover {
+        color: black;
+    }
+
+    .phone-cart {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .menu.active {
+        left: 0;
+        color: black;
+    }
+
+    .p-v-seller-btn {
+        display: flex;
+    }
+
+    .p-v-seller-btn input:checked+.toggle-seller-button {
+        background-color: #436850;
+    }
+
+    .p-v-seller-btn input:checked+.toggle-seller-button::before {
+        transform: translateX(40px);
+        content: 'Sell';
+    }
+
+    .p-v-seller-btn input {
+        display: none;
+    }
+
+    .profile-logo-container{
+        display: none;
+    }
+    .profile-logo-container-phone{
+        display: flex;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .profile-logo-container-phone:hover{
+        margin-bottom: 100px;
+    }
+
+    .profile-logo-container-phone:hover .profile-logo-container-dropdown{
+        top: 40px;
+        display: block;
+    }
+    .profile-logo-container-dropdown{
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        z-index: 2;
+        padding: 0;
+        width: 100%;
+        display: none;
+        /* box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5); */
+        transition: all 0.5s ease;
+        /* background-color: #e1d9d9; */
+        border-radius: 10px;
+    }
+    .profile-logo-container-dropdown ul{
+        list-style: none;
+    }
+    .logo-container{
+        padding-left: 0px;
+    }
+}

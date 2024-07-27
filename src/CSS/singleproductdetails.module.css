@@ -1,0 +1,146 @@
+.productDetailsConatiner{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.productImgContainer{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    height: 100%;
+}
+
+
+.imgMain{
+    width: 585px;
+    
+}
+
+.imgMain img{
+    width: 585px;
+}
+
+.productDetails{
+    width: 768px;
+    display: flex;
+    border-left: 1px solid #f4f4f2;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.productTitle{
+    font-size: 30px;
+}
+.productPrice{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.productFeatures{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0 30px 0;
+}
+.productFeatures img{
+    width: 130px;
+}
+
+.chooseColor{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.selectPotText{
+    font-weight: 700;
+}
+.chooseColor div{
+    width: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 1px solid #f4f4f2;
+}
+.chooseQuantity{
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    margin: 10px 0;
+    gap: 5px;
+}
+.minus,.plus{
+    font-size: 20px;
+    background-color: #f4f4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+.quantity{
+   padding: 3px 50px;
+    text-align: center;
+    border: 1px solid #6ea820;
+}
+.addToCart{
+    background-color: #6ea820;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.discription h5{
+    font-size: 18px;
+    border-bottom: 2px solid #f4f4f2;
+    margin-bottom: 10px;
+}
+.discription p{
+    font-size: 13px;
+    line-height: 2;
+}
+
+.specification h5{
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #f4f4f2;
+    margin-bottom: 10px;
+}
+
+.specification li{
+    margin-left: 20px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width:600px){
+    .productImgContainer{
+        width: 100%;
+        position: static;
+    }
+    .productDetailsConatiner{
+        padding: 0;
+    }
+    .imgMain{
+        width: 100%;
+        
+    }
+    .imgMain img{
+        width: 100%;
+    }
+    .productDetails{
+        width: 100%;
+        padding: 20px;
+    }
+    .productFeatures img{
+        width: 70px;
+    }
+}

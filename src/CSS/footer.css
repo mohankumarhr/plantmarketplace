@@ -1,0 +1,122 @@
+.footer-section{
+    width: 100%;
+    background-color: #f4f4f2;
+}
+
+.newsletter-conatainer{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter-conatainer h3{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.newsletter-conatainer p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.newsletter-conatainer input{
+    font-size: 15px;
+    width: 500px;
+    padding: 15px 15px;
+    padding-bottom: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-conatainer button{
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #6ea820;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.footer-conatiner div{
+    width: 300px;
+    text-align: left;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.footer-conatiner div h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-contact p{
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact h4{
+    margin-left: 25px;
+}
+
+.footer-conatiner .footer-icon{
+    margin-right: 5px;
+    color: #6ea820;
+}
+
+.footer-conatiner p:hover{
+    color: #6ea820;
+}
+
+.copy-right{
+    text-align: center;
+    padding: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+@media (max-width:600px){
+    .newsletter-conatainer{
+        padding: 25px;
+    }
+    .newsletter-conatainer h3{
+        font-size: 25px;
+    }
+    .newsletter-conatainer p{
+        font-size: 12px;
+    }
+    .newsletter-conatainer input{
+        width: 200px;
+        font-size: 12px;
+    }
+    .newsletter-conatainer button{
+        padding: 10.5px;
+        font-size: 15px;
+    }
+    .footer-conatiner{
+        gap: 50px;
+    }
+    .footer-conatiner div{
+        text-align: center;
+    }
+    .footer-conatiner div h4{
+        margin-bottom: 10px;
+    }
+    .copy-right{
+        font-size: 10px;
+    }
+}

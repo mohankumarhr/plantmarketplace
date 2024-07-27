@@ -1,0 +1,8 @@
+.announcement-bar{
+    background-color: teal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}

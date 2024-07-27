@@ -1,0 +1,85 @@
+.seller-navbar-container{
+    background-color: #436850;
+    color: white;
+    padding: 0px 0;
+}
+.seller-nav-list{
+    justify-content: center;
+    gap: 20px;
+}
+.seller-nav-list li a{
+    color: white;
+}
+
+.seller-btn-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sell-btn button{
+    color: white;
+    border: 2.5px solid white;
+    background-color: #436850;
+    transition: all 0.5s ease;
+}
+.sell-btn button:hover{
+    background-color: #436850;
+    scale: 1.1;
+}
+
+.toggle-buyer-button{
+    margin-left: 20px;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+   display: block;
+   border-radius: 200px;
+}
+.toggle-buyer-button::before{
+    position: absolute;
+    content: 'Sell';
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #436850;
+    width: 31px;
+    height: 31px;
+    border-radius: 200px;
+    margin: 5px;
+    transform: translateX(40px);
+    transition: 0.2s;
+}
+
+.seller-btn input:checked + .toggle-buyer-button{
+    background-color: #6ea820;
+}
+.seller-btn input:checked + .toggle-buyer-button::before{
+    transform: translateX(0);
+    content: 'Buy';
+}
+
+.dropdown-menu-profile ul li a{
+    color: black;
+}
+
+.sell-btn input{
+    display: none;
+}
+@media (max-width: 600px) {
+    .seller-nav-list li a{
+        color: black;
+    }
+    .seller-nav-list li{
+        margin-left: 10px;
+    }
+    .p-v-seller-btn{
+        margin-left: 0;
+        position: relative;
+    }
+    .toggle-buyer-button{
+        position: absolute;
+        left: -20px;
+    }
+}

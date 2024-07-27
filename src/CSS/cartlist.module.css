@@ -1,0 +1,117 @@
+.cartMainBody{
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 20px;
+    position: relative;
+}
+.cartList{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    flex-basis: 80%;
+}
+.cartList h4{
+    width: auto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px auto;
+    
+}
+.cartHeader{
+    padding-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0000006B;
+}
+
+.checkOut{
+    padding: 50px;
+    flex-basis: 40%;
+    position: sticky;
+    height: fit-content;
+    top: 0px;
+}
+
+.addressContainer button{
+    height: 50px;
+    padding: 7px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    color: #6ea820;
+    border: 1px solid #6ea820;
+    cursor: pointer;
+}
+.addressContainer button:hover{
+    background-color: #6ea820;
+    color: white;
+}
+.priceDetails div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.addressContainer{
+    display: flex;
+}
+
+.addressContainer p{
+ font-size: 12px;
+}
+
+.priceDetails{
+   padding-top: 50px;
+}
+
+.priceDetails h5{
+    font-size: 20px;
+    border-bottom: 1px solid #0000006B;
+    color: #0000006B;
+}
+.finalPrice{
+    padding: 10px 0;
+    font-weight: bold;
+    border-top: 1px dashed #0000006B;
+    border-bottom: 1px dashed #0000006B;
+}
+.priceDetails button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #6ea820;
+    color: white;
+    cursor: pointer;
+}
+
+.addressListContainer{
+    position: fixed;
+    top: -500px;
+    left: 35%;
+    background-color: white;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease;
+    z-index: 2;
+  }  
+  
+.showAddressList{
+    top: 0;
+}
+
+
+@media (max-width:600px){
+    .cartMainBody{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .cartList{
+        padding: 20px;
+        flex-basis: 100%;
+    }
+    .checkOut{
+        flex-basis: 100%;
+        padding: 30px 20px;
+    }
+}

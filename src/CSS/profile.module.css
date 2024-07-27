@@ -1,0 +1,108 @@
+.profileConatiner{
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profileDetails{
+  margin-top: 50px;
+}
+
+.profileDetails ,.addressContainer{
+    width: 60vw;
+    padding: 0;
+    border: 1px solid #ccc;
+   display: flex;
+   justify-content: center;
+  
+}
+
+
+.addressContainer{
+  margin-bottom: 50px;
+}
+
+.profileHeading{
+  flex-basis: 40%;
+    padding: 50px;
+    /* border-right: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+}
+
+.profileHeading p{
+    color: gray;
+    font-size: 12px;
+}
+
+.ProfileDetailsContainer, .addressDetailsContainer{
+  flex-basis: 60%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ProfileDetailsContainer label {
+    margin-bottom: 10px;
+  }
+  
+  .ProfileDetailsContainer input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+
+  .ProfileDetailsContainer button{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #6ea820;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .userAddress{
+    display: flex;
+    flex-direction: column;
+  }
+  .userAddress i{
+    font-size: 15px;
+  }
+
+  .addressDetailsContainer{
+    gap: 20px;
+  }
+
+.addressDetailsContainer button{
+    width: fit-content;
+    padding: 10px 20px;
+   font-size: 15px;
+   border: none;
+   background-color: #6ea820;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+  }
+
+.addAddressMainContainer{
+  position: fixed;
+  top: -1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  transition: all 0.5s ease;
+}  
+
+.showAddAddress{
+  top: 0;
+}
+.profileEditStyle{
+  border: none;
+  background-color: #ccc;
+}
